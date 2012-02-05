@@ -1,7 +1,15 @@
-
-Debug/
-Release/
-*.user
+# boost needs libraries in the -main- directory.
+# Not lib/
 libboost*
+
+# Visual Studio files
+*.user
 *.ncb
 *.suo
+
+# Directories for output when building
+Debug/
+Release/
+
+# (lua)mongo files are all there
+mongo/
