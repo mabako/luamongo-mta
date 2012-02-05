@@ -1,0 +1,44 @@
+Usage:
+	Just read through luamongo's README.md. That contains about all information you need in
+	terms of connecting, querying, and so on.
+
+	require('mongo') isn't needed.
+
+Compiling
+(only done on Windows so far, links lead to the files -I- used)
+	1. Downloading stuff.
+		* download mongodb-cxx-driver
+		  http://downloads.mongodb.org/cxx-driver/mongodb-linux-x86_64-v2.0-latest.tgz
+
+		* download pcre-7.4
+		  http://garr.dl.sourceforge.net/project/pcre/pcre/7.4/pcre-7.4.zip
+		  and read instructions (needs to rename some *.generic and some *.in files, depends on your platform)
+
+		* download python
+		  http://www.python.org/ftp/python/2.6.6/python-2.6.6.msi
+
+		* download scons
+		  http://garr.dl.sourceforge.net/project/scons/scons/1.2.0/scons-1.2.0.win32.exe
+
+		* download boost precompiled libs
+		  http://www.mongodb.org/download/attachments/12157032/boost_1_42_vs2008_partial_prebuilt.7z
+
+		* download luamongo
+		  https://github.com/mabako/luamongo; I've compiled it with the 'db-find-one' branch.
+
+	2. Extracting
+		/ - files from luamongo-mta (everything in here) AND all *.lib files from boost/lib.
+		/mongo - files from luamongo
+		/mongo/boost - files from boost/boost (lots of subdirectories, some *.hpp files)
+		/mongo/mongo - files from mongodb-cxx-driver (contains SConstruct file)
+		/mongo/mongo/pcre-7.4 - PCRE files
+
+	3. Compiling
+		* run in the directory with SConstruct
+		  scons mongoclient.lib
+		  
+		  This is most likely causing issues. The SConstruct file I've used is in SConstruct.win32.vs2008.
+
+		* build the project (this should toss roughly a hundred of warnings about symbols while linking)
+		  If some boost libs are missing in RELEASE, I've changed the names with smaller filenames to match those.
+		  That's prolly dumb, but it works.

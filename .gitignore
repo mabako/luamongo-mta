@@ -1,0 +1,7 @@
+
+Debug/
+Release/
+*.user
+libboost*
+*.ncb
+*.suo
