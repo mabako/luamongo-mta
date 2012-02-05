@@ -257,15 +257,11 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\CThread.h"
-				>
-			</File>
-			<File
-				RelativePath=".\CThreadData.h"
-				>
-			</File>
-			<File
 				RelativePath=".\ml_base.h"
+				>
+			</File>
+			<File
+				RelativePath=".\resource.h"
 				>
 			</File>
 			<Filter
@@ -321,6 +317,10 @@
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath=".\luamongo.rc"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>
