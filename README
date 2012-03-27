@@ -24,7 +24,7 @@ Compiling
 		  http://www.mongodb.org/download/attachments/12157032/boost_1_42_vs2008_partial_prebuilt.7z
 
 		* download luamongo
-		  https://github.com/mabako/luamongo; I've compiled it with the 'db-find-one' branch.
+		  https://github.com/mabako/luamongo; I've compiled it with the 'master' branch.
 
 	2. Extracting
 		/ - files from luamongo-mta (everything in here) AND all *.lib files from boost/lib.

@@ -131,6 +131,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				FavorSizeOrSpeed="1"
 				AdditionalIncludeDirectories=".;include;mongo;mongo/mongo/mongo"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;_USRDLL;_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
